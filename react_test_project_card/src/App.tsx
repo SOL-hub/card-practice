@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { css } from '@emotion/react'
+import Text from '@/components/common/Text'
+
 
 const containerStyle = css`
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +17,8 @@ function App() {
   return (
     <>
       <div css={containerStyle}>
+        <Text typography="Headline" display="block" color='skyBlue50'>테스트 폰트</Text>
+        <Text typography="Headline" display="block" fontWeight="500">테스트 폰트</Text>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
